@@ -328,7 +328,7 @@ func (enc *jsonEncoder) EncodeEntry(ent Entry, fields []Field) (*buffer.Buffer, 
 		final.AddString(final.StacktraceKey, ent.Stack)
 	}
 	final.buf.AppendByte('}')
-	final.buf.AppendByte('\n')
+	final.buf.AppendString(final.LineSeparator)
 
 	ret := final.buf
 	putJSONEncoder(final)

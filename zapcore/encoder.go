@@ -202,6 +202,7 @@ type EncoderConfig struct {
 	NameKey       string `json:"nameKey" yaml:"nameKey"`
 	CallerKey     string `json:"callerKey" yaml:"callerKey"`
 	StacktraceKey string `json:"stacktraceKey" yaml:"stacktraceKey"`
+	LineSeparator string `json:"lineSeparator" yaml:"lineSeparator"`
 	// Configure the primitive representations of common complex types. For
 	// example, some users may want all time.Times serialized as floating-point
 	// seconds since epoch, while others may prefer ISO8601 strings.
